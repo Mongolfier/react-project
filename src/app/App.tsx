@@ -1,10 +1,10 @@
-import { Link } from "react-router-dom";
 import { cx } from "shared/lib/classNames/classNames";
 import { useTheme } from "./providers/ThemeProvider";
 import { AppRouter } from "./providers/router";
 import { Navbar } from "widgets/Navbar";
+import { Sidebar } from "widgets/Sidebar";
+import { Suspense } from "react";
 import "./styles/index.scss";
-
 
 
 const App = () => {
@@ -12,9 +12,14 @@ const App = () => {
 
   return (
     <div className={cx("app", {}, [theme])}>
-      <Navbar />
+      <Suspense fallback="">
+        <Navbar />
+        <div className="content-page">
+          <Sidebar />
+          <AppRouter />
+        </div>
+      </Suspense>
 
-      <AppRouter />
     </div>
   )
 
