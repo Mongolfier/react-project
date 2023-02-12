@@ -5,7 +5,7 @@ export const cx = (cls?: string, mods: Mods = {}, additional?: Array<string | un
   return [
     cls,
     ...addtionalDefined.filter(Boolean),
-    ...Object.keys(Boolean(mods))
+    ...Object.keys(mods)
       .filter((key) => Boolean(mods[key]))
       .map((className) => className)
   ].join(' ')

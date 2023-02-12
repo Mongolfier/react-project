@@ -1,6 +1,5 @@
 import { Theme, useTheme } from 'app/providers/ThemeProvider'
 import { cx } from 'shared/lib/classNames/classNames'
-import cls from './ThemeSwitcher.module.scss'
 import LightIcon from 'shared/assets/icons/theme-light.svg'
 import DarkIcon from 'shared/assets/icons/theme-dark.svg'
 import { Button, ThemeButton } from 'shared/ui/Button/ui/Button'
@@ -15,10 +14,10 @@ export const ThemeSwitcher = ({ className }: ThemeSwitcherProps): JSX.Element =>
   return (
     <Button
       theme={ThemeButton.CLEAR}
-      className={cx(cls.ThemeSwitcher, {}, [className])}
+      className={cx('', {}, [className])}
       onClick={toggleTheme}
     >
-      {theme === Theme.DARK ? <DarkIcon /> : <LightIcon /> }
+      {theme === Theme.DARK ? <DarkIcon /> : <LightIcon />}
     </Button>
   )
 }

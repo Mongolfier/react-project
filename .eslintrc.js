@@ -1,11 +1,13 @@
 module.exports = {
   env: {
     browser: true,
-    es2021: true
+    es2021: true,
+    jest: true
   },
   extends: [
     'plugin:react/recommended',
-    'standard-with-typescript'
+    'standard-with-typescript',
+    'plugin:i18next/recommended'
   ],
   overrides: [
   ],
@@ -15,7 +17,9 @@ module.exports = {
     project: ['./tsconfig.json']
   },
   plugins: [
-    'react'
+    'react',
+    '@typescript-eslint',
+    'i18next'
   ],
   rules: {
     'react/jsx-indent': [2, 2],
