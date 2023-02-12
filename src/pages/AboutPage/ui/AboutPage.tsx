@@ -1,11 +1,8 @@
-interface AboutPageProps {
-}
 
-const AboutPage = (props: AboutPageProps) => {
-
+const AboutPage = (): JSX.Element => {
   return (
     <div>ABOUT</div>
   )
-};
+}
 
-export default AboutPage;
+export default AboutPage

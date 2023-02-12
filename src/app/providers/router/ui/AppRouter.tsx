@@ -1,8 +1,8 @@
-import { Suspense } from "react";
-import { Routes, Route } from "react-router-dom";
-import { routeConfig } from "shared/config/routerConfig/routerConfig";
+import { Suspense } from 'react'
+import { Routes, Route } from 'react-router-dom'
+import { routeConfig } from 'shared/config/routerConfig/routerConfig'
 
-const AppRouter = () => {
+const AppRouter = (): JSX.Element => {
   return (
     <div>
       <Suspense fallback="">
@@ -17,7 +17,7 @@ const AppRouter = () => {
         </Routes>
       </Suspense>
     </div>
-  );
-};
+  )
+}
 
-export default AppRouter;
+export default AppRouter

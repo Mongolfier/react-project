@@ -1,12 +1,12 @@
-import { cx } from "shared/lib/classNames/classNames";
-import { AppLink } from "shared/ui/AppLink";
-import { AppLinkTheme } from "shared/ui/AppLink/AppLink";
-import cls from "./Navbar.module.scss";
+import { cx } from 'shared/lib/classNames/classNames'
+import { AppLink } from 'shared/ui/AppLink'
+import { AppLinkTheme } from 'shared/ui/AppLink/AppLink'
+import cls from './Navbar.module.scss'
 interface NavbarProps {
-  className?: string;
+  className?: string
 }
 
-export const Navbar = ({className}: NavbarProps) => {
+export const Navbar = ({ className }: NavbarProps): JSX.Element => {
   return (
     <div className={cx(cls.navbar, {}, [className])}>
       <div className={cls.links}>
@@ -15,4 +15,4 @@ export const Navbar = ({className}: NavbarProps) => {
       </div>
     </div>
   )
-};
+}

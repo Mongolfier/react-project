@@ -1,17 +1,16 @@
-import { cx } from "shared/lib/classNames/classNames";
-import { useTheme } from "./providers/ThemeProvider";
-import { AppRouter } from "./providers/router";
-import { Navbar } from "widgets/Navbar";
-import { Sidebar } from "widgets/Sidebar";
-import { Suspense } from "react";
-import "./styles/index.scss";
+import { cx } from 'shared/lib/classNames/classNames'
+import { useTheme } from './providers/ThemeProvider'
+import { AppRouter } from './providers/router'
+import { Navbar } from 'widgets/Navbar'
+import { Sidebar } from 'widgets/Sidebar'
+import { Suspense } from 'react'
+import './styles/index.scss'
 
-
-const App = () => {
-  const {theme} = useTheme();
+const App = (): JSX.Element => {
+  const { theme } = useTheme()
 
   return (
-    <div className={cx("app", {}, [theme])}>
+    <div className={cx('app', {}, [theme])}>
       <Suspense fallback="">
         <Navbar />
         <div className="content-page">
@@ -22,7 +21,6 @@ const App = () => {
 
     </div>
   )
-
 }
 
-export default App;
+export default App
