@@ -5,13 +5,14 @@ import { Navbar } from 'widgets/Navbar'
 import { Sidebar } from 'widgets/Sidebar'
 import { Suspense } from 'react'
 import './styles/index.scss'
+import PageLoader from 'shared/ui/PageLoader/ui/PageLoader'
 
 const App = (): JSX.Element => {
   const { theme } = useTheme()
 
   return (
     <div className={cx('app', {}, [theme])}>
-      <Suspense fallback="">
+      <Suspense fallback={<PageLoader />}>
         <Navbar />
         <div className="content-page">
           <Sidebar />
