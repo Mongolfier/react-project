@@ -37,6 +37,7 @@ module.exports = {
     'import/extensions': 'off',
     'import/no-extraneous-dependencies': 'off',
     'no-underscore-dangle': 'off',
-    '@typescript-eslint/strict-boolean-expressions': 'warn'
+    '@typescript-eslint/strict-boolean-expressions': 'warn',
+    '@typescript-eslint/space-before-function-paren': 'off'
   }
 }

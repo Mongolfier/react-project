@@ -20,7 +20,8 @@ export const Button: FC<ButtonProps> = (props) => {
   } = props
 
   return (
-    <button type="button" {...otherProps} className={cx(cls.Button, {}, [className, cls[theme]])}>
+    // eslint-disable-next-line @typescript-eslint/strict-boolean-expressions
+    <button type="button" {...otherProps} className={cx(cls.Button, {}, [className, theme ? cls[theme] : undefined])}>
       {children}
     </button>
   )
