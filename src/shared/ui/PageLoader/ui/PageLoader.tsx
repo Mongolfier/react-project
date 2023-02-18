@@ -1,4 +1,4 @@
-import { cx } from 'shared/lib/classNames/classNames'
+import { cx } from '../../../lib/classNames/classNames'
 import './PageLoader.scss'
 
 interface PageLoaderProps {
