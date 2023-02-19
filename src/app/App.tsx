@@ -4,8 +4,9 @@ import { AppRouter } from './providers/router'
 import { Navbar } from 'widgets/Navbar'
 import { Sidebar } from 'widgets/Sidebar'
 import { Suspense } from 'react'
+import { PageLoader } from 'shared/ui/PageLoader/PageLoader'
 import './styles/index.scss'
-import PageLoader from 'shared/ui/PageLoader/ui/PageLoader'
+
 
 const App = (): JSX.Element => {
   const { theme } = useTheme()

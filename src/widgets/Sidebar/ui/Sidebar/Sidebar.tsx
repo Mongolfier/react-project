@@ -1,20 +1,20 @@
-import { cx } from 'shared/lib/classNames/classNames'
-import { useState } from 'react'
-import { ThemeSwitcher } from 'shared/ui/ThemeSwitcher'
-import LangSwitcher from 'shared/ui/LangSwitcher/LangSwitcher'
-import cls from './Sidebar.module.scss'
-import { Button } from 'shared/ui/Button/ui/Button'
+import { cx } from 'shared/lib/classNames/classNames';
+import { useState } from 'react';
+import { ThemeSwitcher } from 'shared/ui/ThemeSwitcher';
+import cls from './Sidebar.module.scss';
+import { Button } from 'shared/ui/Button/ui/Button';
+import LangSwitcher from 'shared/ui/LangSwitcher/LangSwitcher';
 
 interface SidebarProps {
-  className?: string
+  className?: string;
 }
 
-export const Sidebar = ({ className }: SidebarProps): JSX.Element => {
-  const [collapsed, setCollapsed] = useState(false)
+export const Sidebar = ({ className }: SidebarProps) => {
+  const [collapsed, setCollapsed] = useState(false);
 
-  const onToggle = (): void => {
-    setCollapsed((prev) => !prev)
-  }
+  const onToggle = () => {
+    setCollapsed((prev) => !prev);
+  };
 
   return (
     <div
@@ -32,5 +32,5 @@ export const Sidebar = ({ className }: SidebarProps): JSX.Element => {
         <LangSwitcher className={cls.lang} />
       </div>
     </div>
-  )
-}
+  );
+};

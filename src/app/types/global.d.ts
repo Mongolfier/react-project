@@ -12,4 +12,4 @@ declare module '*.svg' {
   export default content
 }
 
-declare const _IS_DEV_: boolean
+declare const __IS_DEV__: boolean
