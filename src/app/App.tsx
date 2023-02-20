@@ -7,7 +7,6 @@ import { Suspense } from 'react'
 import { PageLoader } from 'shared/ui/PageLoader/PageLoader'
 import './styles/index.scss'
 
-
 const App = (): JSX.Element => {
   const { theme } = useTheme()
 

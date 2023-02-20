@@ -1,44 +1,43 @@
-import { ComponentMeta, ComponentStory } from '@storybook/react';
-import { ThemeDecorator } from 'shared/config/storybook/ThemeDecorator/ThemeDecorator';
-import { Theme } from 'app/providers/ThemeProvider';
-import { AppLink, AppLinkTheme } from './AppLink';
+import { type ComponentMeta, type ComponentStory } from '@storybook/react'
+import { ThemeDecorator } from 'shared/config/storybook/ThemeDecorator/ThemeDecorator'
+import { Theme } from 'app/providers/ThemeProvider'
+import { AppLink, AppLinkTheme } from './AppLink'
 
 export default {
   title: 'shared/AppLink',
   component: AppLink,
   argTypes: {
-    backgroundColor: { control: 'color' },
+    backgroundColor: { control: 'color' }
   },
   args: {
-    to: '/',
-  },
-} as ComponentMeta<typeof AppLink>;
+    to: '/'
+  }
+} as ComponentMeta<typeof AppLink>
 
-const Template: ComponentStory<typeof AppLink> = (args) => <AppLink {...args} />;
+const Template: ComponentStory<typeof AppLink> = (args) => <AppLink {...args} />
 
-export const Primary = Template.bind({});
+export const Primary = Template.bind({})
 Primary.args = {
   children: 'Text',
-  theme: AppLinkTheme.PRIMARY,
-};
+  theme: AppLinkTheme.PRIMARY
+}
 
-export const Secondary = Template.bind({});
+export const Secondary = Template.bind({})
 Secondary.args = {
   children: 'Text',
-  theme: AppLinkTheme.SECONDARY,
-};
+  theme: AppLinkTheme.SECONDARY
+}
 
-export const PrimaryDark = Template.bind({});
+export const PrimaryDark = Template.bind({})
 PrimaryDark.args = {
   children: 'Text',
-  theme: AppLinkTheme.PRIMARY,
-};
-PrimaryDark.decorators = [ThemeDecorator(Theme.DARK)];
+  theme: AppLinkTheme.PRIMARY
+}
+PrimaryDark.decorators = [ThemeDecorator(Theme.DARK)]
 
-export const SecondaryDark = Template.bind({});
+export const SecondaryDark = Template.bind({})
 SecondaryDark.args = {
   children: 'Text',
-  theme: AppLinkTheme.SECONDARY,
-};
-SecondaryDark.decorators = [ThemeDecorator(Theme.DARK)];
-
+  theme: AppLinkTheme.SECONDARY
+}
+SecondaryDark.decorators = [ThemeDecorator(Theme.DARK)]
