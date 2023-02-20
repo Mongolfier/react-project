@@ -17,7 +17,7 @@ export function useTheme (): UseThemeResult {
     localStorage.setItem(LOCAL_STORAGE_THEME_KEY, newTheme)
   }
 
-  const correctTheme = theme
+  const correctTheme = theme as Theme
 
   return { theme: correctTheme, toggleTheme }
 }
