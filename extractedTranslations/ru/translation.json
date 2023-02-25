@@ -2,5 +2,7 @@
   "about": "about",
   "main": "main",
   "pageNotFound": "pageNotFound",
-  "translate": "translate"
+  "translate": "translate",
+  "Главная": "Главная",
+  "О сайте": "О сайте"
 }

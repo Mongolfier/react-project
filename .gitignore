@@ -3,3 +3,6 @@ node_modules
 
 image.png
 .vscode
+/storybook-static
+.loki/report.html
+.loki/report.json
