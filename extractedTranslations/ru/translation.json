@@ -5,6 +5,8 @@
     }
   },
   "about": "about",
+  "decrement": "decrement",
+  "increment": "increment",
   "main": "main",
   "pageNotFound": "pageNotFound",
   "translate": "translate",
