@@ -10,6 +10,8 @@
   "main": "main",
   "pageNotFound": "pageNotFound",
   "translate": "translate",
+  "Введите username": "Введите username",
+  "Введите пароль": "Введите пароль",
   "Войти": "Войти",
   "Главная": "Главная",
   "О сайте": "О сайте"

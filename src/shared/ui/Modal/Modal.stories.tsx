@@ -1,4 +1,3 @@
-import React from 'react'
 import { type ComponentMeta, type ComponentStory } from '@storybook/react'
 import { Modal } from 'shared/ui/Modal/Modal'
 import { ThemeDecorator } from 'shared/config/storybook/ThemeDecorator/ThemeDecorator'
