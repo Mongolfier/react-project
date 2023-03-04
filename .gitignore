@@ -6,3 +6,4 @@ image.png
 /storybook-static
 .loki/report.html
 .loki/report.json
+.husky
