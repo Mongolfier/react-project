@@ -1,4 +1,4 @@
-import { type RuleSetRule } from 'webpack'
+import { DefinePlugin, type RuleSetRule } from 'webpack'
 import type webpack from 'webpack'
 import path from 'path'
 import { buildCssLoader } from '../build/loaders/buildCssLoader'
@@ -13,6 +13,9 @@ export default ({ config }: { config: webpack.Configuration }) => {
   }
   config.resolve?.modules?.push(paths.src)
   config.resolve?.extensions?.push('.ts', '.tsx')
+  config.plugins?.push(new DefinePlugin({
+    __IS_DEV__: true
+  }))
 
   if ((config.module?.rules) != null) {
     config.module.rules = config.module?.rules?.map((rule: RuleSetRule | '...') => {

@@ -47,6 +47,8 @@ module.exports = {
     'react/display-name': 'off',
     'react-hooks/rules-of-hooks': 'error',
     'react-hooks/exhaustive-deps': 'error',
+    '@typescript-eslint/consistent-type-imports': 'off',
+    '@typescript-eslint/ban-ts-comment': 'off',
     'i18next/no-literal-string': [
       'error',
       {
